@@ -5,7 +5,9 @@
 
 
 
-uint64_t create_path(const char *path );
+uint64_t create_path_v1(const char *path );
+uint64_t create_path_v2(const char *path );
+uint64_t create_path_v3(const char *path );
 
 
 
