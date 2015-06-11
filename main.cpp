@@ -6,14 +6,11 @@
 
 int main(int argc, const char *argv[])
 {
-    const char* path = "C:\\Documents and Settings\\Administrator\\Application Data\\ComplexSystems\\Delta8\\Settings";
+    const char* path_root_required = "C:\\Documents and Settings\\Administrator\\Application Data\\ComplexSystems\\Delta8\\Settings";
+    const char* path = "C:\\My Cool Folder\\Administrator\\Application Data\\ComplexSystems\\Delta8\\Settings";
 
-    if(!create_path(path)) {
-        std::cout << "Done\n";
-    }
-    else {
-        std::cout << "Fail\n";
-    }
+    std::cout << create_path(path_root_required) << "\n";
+    std::cout << create_path(path) << "\n";
 
     return 0;
 }
